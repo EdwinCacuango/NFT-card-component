@@ -1,14 +1,29 @@
 @import "variables";
 @import "globals";
+@import "desktop";
 
-.card{
-    margin: 3.875rem auto;
+.card-component{
+    margin-top:3.875rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5625rem;
+    width: 20.3125rem;
+
+    background-color: $card-bg;
 }
 
 .image-card{
-
+    padding: ;
+    .image-card {
+        max-width: 17.5rem;
+    }
+    img {
+        max-width: 100%;
+    }
 }
 
 .text-card{
+    color:$soft-blue;
     
 }
+

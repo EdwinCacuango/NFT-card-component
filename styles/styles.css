@@ -10,14 +10,31 @@ html {
 }
 
 body {
-  min-height: 100vh;
   margin: 0;
   padding: 0;
   font-family: 'Outfit', sans-serif;
   font-size: 1.125rem;
+  font-weight: 400;
+  background-color: #0d192b;
 }
 
 .card {
-  margin: 3.875rem auto;
+  margin-top: 3.875rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20.3125rem;
+  background-color: #14253d;
+}
+
+.image-card .image-card {
+  max-width: 17.5rem;
+}
+
+.image-card img {
+  max-width: 100%;
+}
+
+.text-card {
+  color: #8bacda;
 }
 /*# sourceMappingURL=styles.css.map */
