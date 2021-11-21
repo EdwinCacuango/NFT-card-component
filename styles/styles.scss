@@ -2,28 +2,110 @@
 @import "globals";
 @import "desktop";
 
-.card-component{
-    margin-top:3.875rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5625rem;
-    width: 20.3125rem;
-
-    background-color: $card-bg;
+.card-component {
+  margin-top: 3.875rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5625rem;
+  max-width: 20.3125rem;
+  border-radius: 1rem;
+  background-color: $card-bg;
 }
 
-.image-card{
-    padding: ;
-    .image-card {
-        max-width: 17.5rem;
+.image-card {
+  display: grid;
+  max-width: 17.5rem;
+  background-color: transparent;
+  border-radius: 0.75rem;
+  overflow: hidden;
+
+  .art,
+  .layer {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .art {
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 0.75rem;
+    max-width: 100%;
+  }
+  .layer {
+    opacity: 0;
+    z-index: 1;
+    align-self: center;
+    justify-self: center;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: $cyan;
+    .art {
+      mix-blend-mode: multiply;
     }
+    .layer {
+      opacity: 1;
+    }
+  }
+}
+
+.text-card {
+  color: $soft-blue;
+  h1 {
+    color: $white;
+    font-weight: 400;
+    font-size: 1.5rem;
+    &:hover {
+      cursor: pointer;
+      color: $cyan;
+    }
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  .price-card,
+  .date-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     img {
-        max-width: 100%;
+      max-width: 100%;
+      margin-right: 0.5rem;
     }
+  }
+  .price-card p {
+    color: $cyan;
+    font-weight: 400;
+  }
 }
 
-.text-card{
-    color:$soft-blue;
-    
-}
+.autor-card {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid $line;
+  padding-top: 1rem;
 
+  .image-avatar {
+    max-width: 2rem;
+    margin-right: 1rem;
+    img {
+      max-width: 100%;
+    }
+  }
+  p {
+    color: $soft-blue;
+  }
+  span {
+    color: $white;
+    &:hover {
+      cursor: pointer;
+      color: $cyan;
+    }
+  }
+}
