@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://www.frontendmentor.io/solutions/nft-card-component-using-flexbox-and-grid-AHaHYqzyy)
-- Live Site URL: (https://nostalgic-banach-6d0114.netlify.app/)
+- Solution URL:  [Frontend Mentor solution](https://www.frontendmentor.io/solutions/nft-card-component-using-flexbox-and-grid-AHaHYqzyy)
+- Live Site URL: [Netlify site](https://nostalgic-banach-6d0114.netlify.app/)
 
 ## My process
 
