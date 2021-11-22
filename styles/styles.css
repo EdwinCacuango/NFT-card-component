@@ -23,7 +23,7 @@ body {
 @media (min-width: 900px) {
   .card-component {
     max-width: 21.875rem;
-    margin-top: 9.5rem;
+    margin-top: 50%;
   }
 }
 
